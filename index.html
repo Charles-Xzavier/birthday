@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="overlay">
+        <p>Hey</p>
+        <p class="receiver">Great</p>
+        <h1>Happy Birthday!!!!</h1>
+        <p class="wish">
+          Today, I celebrate not just your birth, but the amazing person you’ve become and the countless memories we’ve shared. You’re more than a friend to me bro; you’re family, a constant source of
+          laughter and inspiration. Your kindness and unwavering support have made such a difference in my life, and I’m endlessly grateful for you. Here’s to more talks, adventures, and all the
+          dreams we’ll chase together. May this year bring you the happiness and success you deserve. Cheers to you, my brother!
+        </p>
+        <p class="sender">from Charles</p>
+      </div>
+      <div class="video-background">
+        <video id="background-video" loop>
+          <source src="./edited/lv_0_20240624095353.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <button id="play-button">Play Video</button>
+    </main>
+
+    <script>
+      document.getElementById('play-button').addEventListener('click', function () {
+        const video = document.getElementById('background-video');
+        video.play();
+        this.style.display = 'none';
+      });
+    </script>
+  </body>
+</html>
